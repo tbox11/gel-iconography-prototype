@@ -1,0 +1,694 @@
+
+.50 {
+  background-image: url(sport.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.100 {
+  background-image: url(sport.png);
+  background-position: -32px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.150 {
+  background-image: url(sport.png);
+  background-position: -64px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.200 {
+  background-image: url(sport.png);
+  background-position: -96px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.250 {
+  background-image: url(sport.png);
+  background-position: -128px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.300 {
+  background-image: url(sport.png);
+  background-position: -160px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.10-wicket {
+  background-image: url(sport.png);
+  background-position: -192px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.5-wicket {
+  background-image: url(sport.png);
+  background-position: -224px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.alerts {
+  background-image: url(sport.png);
+  background-position: -256px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.all-teams {
+  background-image: url(sport.png);
+  background-position: -288px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.american-football {
+  background-image: url(sport.png);
+  background-position: -320px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.archery {
+  background-image: url(sport.png);
+  background-position: -352px 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.athletics {
+  background-image: url(sport.png);
+  background-position: 0px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+.bad-light-stops-play {
+  background-image: url(sport.png);
+  background-position: -32px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+.badminton {
+  background-image: url(sport.png);
+  background-position: -64px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+.baseball {
+  background-image: url(sport.png);
+  background-position: -96px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+.basketball {
+  background-image: url(sport.png);
+  background-position: -128px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+.bowls {
+  background-image: url(sport.png);
+  background-position: -160px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+.boxing-alt {
+  background-image: url(sport.png);
+  background-position: -192px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+.boxing {
+  background-image: url(sport.png);
+  background-position: -224px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+.bronze-medal {
+  background-image: url(sport.png);
+  background-position: -256px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+.canoeing {
+  background-image: url(sport.png);
+  background-position: -288px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+.champagne-moment {
+  background-image: url(sport.png);
+  background-position: -320px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+.checkered-flag {
+  background-image: url(sport.png);
+  background-position: -352px -32px;
+  width: 32px;
+  height: 32px;
+}
+
+.close-of-play {
+  background-image: url(sport.png);
+  background-position: 0px -64px;
+  width: 32px;
+  height: 32px;
+}
+
+.cricket {
+  background-image: url(sport.png);
+  background-position: -32px -64px;
+  width: 32px;
+  height: 32px;
+}
+
+.cycling {
+  background-image: url(sport.png);
+  background-position: -64px -64px;
+  width: 32px;
+  height: 32px;
+}
+
+.darts {
+  background-image: url(sport.png);
+  background-position: -96px -64px;
+  width: 32px;
+  height: 32px;
+}
+
+.disability-sports {
+  background-image: url(sport.png);
+  background-position: -128px -64px;
+  width: 32px;
+  height: 32px;
+}
+
+.diving {
+  background-image: url(sport.png);
+  background-position: -160px -64px;
+  width: 32px;
+  height: 31px;
+}
+
+.drinks-break {
+  background-image: url(sport.png);
+  background-position: -192px -64px;
+  width: 32px;
+  height: 32px;
+}
+
+.drivers {
+  background-image: url(sport.png);
+  background-position: -224px -64px;
+  width: 32px;
+  height: 32px;
+}
+
+.drop-catch {
+  background-image: url(sport.png);
+  background-position: -256px -64px;
+  width: 32px;
+  height: 32px;
+}
+
+.equestrian {
+  background-image: url(sport.png);
+  background-position: -288px -64px;
+  width: 32px;
+  height: 32px;
+}
+
+.fencing {
+  background-image: url(sport.png);
+  background-position: -320px -64px;
+  width: 32px;
+  height: 32px;
+}
+
+.fixtures-results {
+  background-image: url(sport.png);
+  background-position: -352px -64px;
+  width: 32px;
+  height: 32px;
+}
+
+.fixtures {
+  background-image: url(sport.png);
+  background-position: 0px -96px;
+  width: 32px;
+  height: 32px;
+}
+
+.football {
+  background-image: url(sport.png);
+  background-position: -32px -96px;
+  width: 32px;
+  height: 32px;
+}
+
+.formula-1 {
+  background-image: url(sport.png);
+  background-position: -64px -96px;
+  width: 32px;
+  height: 32px;
+}
+
+.gaelic-games {
+  background-image: url(sport.png);
+  background-position: -96px -96px;
+  width: 32px;
+  height: 32px;
+}
+
+.game-set-match {
+  background-image: url(sport.png);
+  background-position: -128px -96px;
+  width: 32px;
+  height: 32px;
+}
+
+.generic-events {
+  background-image: url(sport.png);
+  background-position: -160px -96px;
+  width: 32px;
+  height: 32px;
+}
+
+.generic-goal {
+  background-image: url(sport.png);
+  background-position: -192px -96px;
+  width: 32px;
+  height: 32px;
+}
+
+.generic-sport {
+  background-image: url(sport.png);
+  background-position: -224px -96px;
+  width: 32px;
+  height: 32px;
+}
+
+.goal-medal {
+  background-image: url(sport.png);
+  background-position: -256px -96px;
+  width: 32px;
+  height: 32px;
+}
+
+.goal {
+  background-image: url(sport.png);
+  background-position: -288px -96px;
+  width: 32px;
+  height: 32px;
+}
+
+.golf {
+  background-image: url(sport.png);
+  background-position: -320px -96px;
+  width: 32px;
+  height: 32px;
+}
+
+.gossip {
+  background-image: url(sport.png);
+  background-position: -352px -96px;
+  width: 32px;
+  height: 32px;
+}
+
+.gymnastics {
+  background-image: url(sport.png);
+  background-position: 0px -128px;
+  width: 32px;
+  height: 32px;
+}
+
+.handball {
+  background-image: url(sport.png);
+  background-position: -32px -128px;
+  width: 32px;
+  height: 32px;
+}
+
+.headlines {
+  background-image: url(sport.png);
+  background-position: -64px -128px;
+  width: 32px;
+  height: 32px;
+}
+
+.hockey {
+  background-image: url(sport.png);
+  background-position: -96px -128px;
+  width: 32px;
+  height: 32px;
+}
+
+.horse-racing {
+  background-image: url(sport.png);
+  background-position: -128px -128px;
+  width: 32px;
+  height: 32px;
+}
+
+.ice-hockey {
+  background-image: url(sport.png);
+  background-position: -160px -128px;
+  width: 32px;
+  height: 32px;
+}
+
+.interval {
+  background-image: url(sport.png);
+  background-position: -192px -128px;
+  width: 32px;
+  height: 32px;
+}
+
+.its-sunny {
+  background-image: url(sport.png);
+  background-position: -224px -128px;
+  width: 32px;
+  height: 32px;
+}
+
+.judo {
+  background-image: url(sport.png);
+  background-position: -256px -128px;
+  width: 32px;
+  height: 32px;
+}
+
+.leagues-competitions {
+  background-image: url(sport.png);
+  background-position: -288px -128px;
+  width: 32px;
+  height: 32px;
+}
+
+.live-scores {
+  background-image: url(sport.png);
+  background-position: -320px -128px;
+  width: 56px;
+  height: 32px;
+}
+
+.man-of-the-match {
+  background-image: url(sport.png);
+  background-position: 0px -160px;
+  width: 32px;
+  height: 32px;
+}
+
+.man-of-the-series {
+  background-image: url(sport.png);
+  background-position: -32px -160px;
+  width: 32px;
+  height: 31px;
+}
+
+.medal-table {
+  background-image: url(sport.png);
+  background-position: -64px -160px;
+  width: 32px;
+  height: 32px;
+}
+
+.modern-pentathlon {
+  background-image: url(sport.png);
+  background-position: -96px -160px;
+  width: 32px;
+  height: 32px;
+}
+
+.moto-gp {
+  background-image: url(sport.png);
+  background-position: -128px -160px;
+  width: 32px;
+  height: 32px;
+}
+
+.netball {
+  background-image: url(sport.png);
+  background-position: -160px -160px;
+  width: 32px;
+  height: 32px;
+}
+
+.new-ball {
+  background-image: url(sport.png);
+  background-position: -192px -160px;
+  width: 32px;
+  height: 32px;
+}
+
+.ouch {
+  background-image: url(sport.png);
+  background-position: -224px -160px;
+  width: 32px;
+  height: 32px;
+}
+
+.pole-position {
+  background-image: url(sport.png);
+  background-position: -256px -160px;
+  width: 32px;
+  height: 32px;
+}
+
+.rain-stops-play {
+  background-image: url(sport.png);
+  background-position: -288px -160px;
+  width: 32px;
+  height: 32px;
+}
+
+.red-flag {
+  background-image: url(sport.png);
+  background-position: -320px -160px;
+  width: 32px;
+  height: 32px;
+}
+
+.results {
+  background-image: url(sport.png);
+  background-position: -352px -160px;
+  width: 32px;
+  height: 31px;
+}
+
+.rowing {
+  background-image: url(sport.png);
+  background-position: -352px -191px;
+  width: 32px;
+  height: 32px;
+}
+
+.rugby-league {
+  background-image: url(sport.png);
+  background-position: 0px -223px;
+  width: 32px;
+  height: 32px;
+}
+
+.rugby-union {
+  background-image: url(sport.png);
+  background-position: -32px -223px;
+  width: 32px;
+  height: 32px;
+}
+
+.sailing {
+  background-image: url(sport.png);
+  background-position: -64px -223px;
+  width: 32px;
+  height: 32px;
+}
+
+.shooting {
+  background-image: url(sport.png);
+  background-position: -96px -223px;
+  width: 32px;
+  height: 32px;
+}
+
+.silver-medal {
+  background-image: url(sport.png);
+  background-position: -128px -223px;
+  width: 32px;
+  height: 32px;
+}
+
+.six {
+  background-image: url(sport.png);
+  background-position: -160px -223px;
+  width: 32px;
+  height: 32px;
+}
+
+.snooker {
+  background-image: url(sport.png);
+  background-position: -192px -223px;
+  width: 32px;
+  height: 30px;
+}
+
+.sports-data {
+  background-image: url(sport.png);
+  background-position: -224px -223px;
+  width: 32px;
+  height: 31px;
+}
+
+.sports-personality {
+  background-image: url(sport.png);
+  background-position: -256px -223px;
+  width: 32px;
+  height: 32px;
+}
+
+.squash {
+  background-image: url(sport.png);
+  background-position: -288px -223px;
+  width: 32px;
+  height: 32px;
+}
+
+.standings-tables {
+  background-image: url(sport.png);
+  background-position: -320px -223px;
+  width: 32px;
+  height: 32px;
+}
+
+.swimming {
+  background-image: url(sport.png);
+  background-position: -352px -223px;
+  width: 32px;
+  height: 32px;
+}
+
+.table-tennis {
+  background-image: url(sport.png);
+  background-position: 0px -255px;
+  width: 32px;
+  height: 32px;
+}
+
+.taekwondo {
+  background-image: url(sport.png);
+  background-position: -32px -255px;
+  width: 32px;
+  height: 32px;
+}
+
+.tennis {
+  background-image: url(sport.png);
+  background-position: -64px -255px;
+  width: 32px;
+  height: 32px;
+}
+
+.touch-down {
+  background-image: url(sport.png);
+  background-position: -96px -255px;
+  width: 32px;
+  height: 32px;
+}
+
+.transfers {
+  background-image: url(sport.png);
+  background-position: -128px -255px;
+  width: 32px;
+  height: 32px;
+}
+
+.triathlon {
+  background-image: url(sport.png);
+  background-position: -160px -255px;
+  width: 32px;
+  height: 32px;
+}
+
+.try {
+  background-image: url(sport.png);
+  background-position: -192px -255px;
+  width: 32px;
+  height: 32px;
+}
+
+.umpire-review {
+  background-image: url(sport.png);
+  background-position: -224px -255px;
+  width: 32px;
+  height: 32px;
+}
+
+.volleyball {
+  background-image: url(sport.png);
+  background-position: -256px -255px;
+  width: 32px;
+  height: 32px;
+}
+
+.weightlifting {
+  background-image: url(sport.png);
+  background-position: -288px -255px;
+  width: 32px;
+  height: 32px;
+}
+
+.wicket {
+  background-image: url(sport.png);
+  background-position: -320px -255px;
+  width: 32px;
+  height: 32px;
+}
+
+.winter-sports {
+  background-image: url(sport.png);
+  background-position: -352px -255px;
+  width: 32px;
+  height: 32px;
+}
+
+.world-record {
+  background-image: url(sport.png);
+  background-position: 0px -287px;
+  width: 32px;
+  height: 31px;
+}
+
+.wrestling {
+  background-image: url(sport.png);
+  background-position: -32px -287px;
+  width: 32px;
+  height: 32px;
+}
+
+.yellow-flag {
+  background-image: url(sport.png);
+  background-position: -64px -287px;
+  width: 32px;
+  height: 32px;
+}
+

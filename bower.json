@@ -1,0 +1,27 @@
+{
+  "name": "gel-demos",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bbc/gel-demos",
+  "authors": [
+    "shaun.bent@bbc.co.uk"
+  ],
+  "description": "A boilerplate for creating GEL Demos",
+  "main": "index.html",
+  "keywords": [
+    "gel",
+    "bbc",
+    "demo"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+      "gel-typography": "^2.0.0",
+      "gel-grid": "git@github.com:bbc/gel-grid.git#v1"
+  }
+}
