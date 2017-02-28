@@ -1,0 +1,9 @@
+/* Icon styles for filtering. */
+
+.gel-icon-demo--filtered {
+	opacity: 1;
+}
+
+.gel-icon-demo--not-filtered {
+	opacity: 0.25;
+}

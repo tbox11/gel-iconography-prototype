@@ -35,12 +35,12 @@
             document.write('<link rel="stylesheet" href="assets/css/gel-demo-base.css" />');
         }
     </script>
-    <script class="js-require-lib" src="http://static.bbci.co.uk/frameworks/requirejs/lib.js"></script>
-    <script type="text/javascript">  bbcRequireMap = {"jquery-1":"http://static.bbci.co.uk/frameworks/jquery/0.4.1/sharedmodules/jquery-1.7.2", "jquery-1.4":"http://static.bbci.co.uk/frameworks/jquery/0.4.1/sharedmodules/jquery-1.4", "jquery-1.9":"http://static.bbci.co.uk/frameworks/jquery/0.4.1/sharedmodules/jquery-1.9.1", "jquery-1.12":"http://static.bbci.co.uk/frameworks/jquery/0.4.1/sharedmodules/jquery-1.12.0.min", "jquery-2.2":"http://static.bbci.co.uk/frameworks/jquery/0.4.1/sharedmodules/jquery-2.2.0.min", "istats-1":"//nav.files.bbci.co.uk/nav-analytics/0.1.0-43/js/istats-1", "swfobject-2":"http://static.bbci.co.uk/frameworks/swfobject/0.1.10/sharedmodules/swfobject-2", "demi-1":"http://static.bbci.co.uk/frameworks/demi/0.10.0/sharedmodules/demi-1", "gelui-1":"http://static.bbci.co.uk/frameworks/gelui/0.9.13/sharedmodules/gelui-1", "cssp!gelui-1/overlay":"http://static.bbci.co.uk/frameworks/gelui/0.9.13/sharedmodules/gelui-1/overlay.css", "relay-1":"http://static.bbci.co.uk/frameworks/relay/0.2.6/sharedmodules/relay-1", "clock-1":"http://static.bbci.co.uk/frameworks/clock/0.1.9/sharedmodules/clock-1", "canvas-clock-1":"http://static.bbci.co.uk/frameworks/clock/0.1.9/sharedmodules/canvas-clock-1", "cssp!clock-1":"http://static.bbci.co.uk/frameworks/clock/0.1.9/sharedmodules/clock-1.css", "jssignals-1":"http://static.bbci.co.uk/frameworks/jssignals/0.3.6/modules/jssignals-1", "jcarousel-1":"http://static.bbci.co.uk/frameworks/jcarousel/0.1.10/modules/jcarousel-1", "bump-3":"//emp.bbci.co.uk/emp/bump-3/bump-3"}; require({ baseUrl: 'http://static.bbci.co.uk/', paths: bbcRequireMap, waitSeconds: 30 }); </script>
+
     <noscript>
         <link rel="stylesheet" href="assets/css/base.css" />
     </noscript>
-
+    
+    <link rel="stylesheet" href="assets/css/main.css" />
 
     </head>
 	<body>
@@ -90,7 +90,7 @@
                     <div class="gel-layout gel-layout--center">
                         <div class="gel-layout__item gel-10/12@xxl">
                         <div id="users">
-  				<input class="search" placeholder="Search Iconography" />
+  				<input id="js-search-input" class="search" placeholder="Search Iconography" />
                         <!-- Contents -->
                         <div class="gel-guideline-table-of-contents">
 						<div style="position: relative; padding-right: 8px; padding-top: 20px;">
@@ -3761,183 +3761,25 @@
                     </div>
                 </div>
             </main>
-            <script type="text/javascript" id="orb-js-script" data-assetpath="http://static.bbci.co.uk/frameworks/barlesque/3.20.5/orb/4/" src="http://static.bbci.co.uk/frameworks/barlesque/3.20.5/orb/4/script/orb.min.js"></script>
+            <script src="assets/js/jquery-1.7.2.js"></script>
             <script src="assets/js/svgxuse.min.js" defer></script>
-            <script src="assets/js/list.js"></script>
-<script>
-var options = {
-  valueNames: [ 'gel-icon-demo__icon-name' ]
-};
-
-var userList = new List('users', options);
-</script>
             <script>
-            var toggleLabel = function() {
-                var section = this.parentElement.parentElement;
-
-                if (section.dataset.labelMode === 'description') {
-                    section.dataset.labelMode = 'name';
-                    this.innerHTML = 'Show Icon Description';
-                } else {
-                    section.dataset.labelMode = 'description';
-                    this.innerHTML = 'Show Icon Names';
-                }
-
-                return false;
-            };
-
-            [].forEach.ca                                    </a
-t__toggle'), function (el) {
-                el.addEventListener('click', toggleLabel, false);
-            });
+                var toggleLabel = function() {
+                    var section = this.parentElement.parentElement;
+                    if (section.dataset.labelMode === 'description') {
+                        section.dataset.labelMode = 'name';
+                        this.innerHTML = 'Show Icon Description';
+                    } else {
+                        section.dataset.labelMode = 'description';
+                        this.innerHTML = 'Show Icon Names';
+                    }
+                    return false;
+                };
+                [].forEach.call(document.querySelectorAll('.gel-icon-demo-set__toggle'), function (el) {
+                    el.addEventListener('click', toggleLabel, false);
+                });
             </script>
-            <script>
-		require(['jquery-1'], function ($) {
-
-			var minScreenWidth 			= 900;
-			var tableOfContentsSelector = ".gel-guideline-table-of-contents";
-			var topPadding 				= 40;
-			var bottomSelector 			= "#gel-banner";
-			var elementWidthAt900		= "20%";
-			var elementWidthAt1008		= "198.42px";
-			var elementWidthAt1280		= "252.81px";
-
-			//All actions once page has loaded
-			$(document).ready(function() {
-				//only do this if there is a table of contents
-				if($('.gel-guideline-table-of-contents').length){
-				  	//smooth scroll to sections
-				  	$('.gel-guideline-table-of-contents a[href^="#"]').bind('click', function(e) {
-					  	e.preventDefault(); // prevent hard jump, the default behavior
-					  	var target = $(this).attr("href"); // Set the target as variable
-					  	// perform animated scrolling by getting top-position of target-element and set it as scroll target
-					  	$('html, body').stop().animate({
-						  	scrollTop: $(target).offset().top
-					  	}, 600, function() {
-							location.hash = target; //attach the hash (#jumptarget) to the pageurl
-							if (!target.tabIndex || target.tabIndex < 0) {
-						  		target.tabIndex = '-1';
-							}
-							this.focus();
-					  	});
-					  	return false;
-				  	});
-				  	//position element once when page is loaded, so if we load the page half way down it is in the right place
-				  	fixElement( tableOfContentsSelector, $(bottomSelector).position().top, minScreenWidth,topPadding);
-				}
-			});
-
-		  	//Change active class on scroll
-		  	$( window ).scroll(function() {
-			  	updateActiveLinks();
-			  	//Fix Table of Contents in the right place
-			  	fixElement( tableOfContentsSelector, $(bottomSelector).position().top, minScreenWidth,topPadding);
-		  	});
-
-		  	//on resized update everything
-		  	$( window ).resize(function() {
-				//by checking innerWidth this also handles if zooming.
-				if( $( window ).innerWidth() >= minScreenWidth){
-				  updateActiveLinks();
-				} else {
-				  removeActiveLinkHighlight();
-				}
-				fixElement( tableOfContentsSelector, $(bottomSelector).position().top, minScreenWidth,topPadding);
-			});
-
-		  	function updateActiveLinks() {
-				//Variable for the top of the window currently
-				var scrollPosition = $( window ).scrollTop();
-
-			  	// Assign active class to nav links while scolling
-			  	$('.gel-guideline-section').each(function(i) {
-				  	if ($(this).position().top <= scrollPosition) {
-					  	$('.gel-guideline-table-of-contents ol li a.active-section').removeClass('active-section');
-					  	$('.gel-guideline-table-of-contents ol li a').eq(i).addClass('active-section');
-				  	}
-			  	});
-		  	}
-
-		  	function removeActiveLinkHighlight() {
-				$('.gel-guideline-table-of-contents ol li a').removeClass('active-section');
-		  	}
-
-		  	function fixElement( elementSelector, bottomPoint, minScreenWidth ,topPadding ) {
-				var elementHeight   	= 	$( elementSelector + " div" ).outerHeight();
-				var rightPaddingAtTop 	= 	8;
-				if( viewport().width >= minScreenWidth && $( elementSelector ).length &&  elementHeight < viewport().height ) {
-			  		var rightPaddingFixed     = 24;
-			  		var scrollPosition        = $( window ).scrollTop();
-			  		var elementPosition       = $( elementSelector ).position().top;
-			  		var elementWidth          = elementWidthAt900;
-			  		var absoluteLockPoint     = bottomPoint - elementHeight - topPadding;
-
-			  		if( viewport().width > 1008 ) {
-						elementWidth = elementWidthAt1008;
-						if( viewport().width > 1280 ) {
-				  			elementWidth      = elementWidthAt1280;
-				  			rightPaddingAtTop = rightPaddingAtTop + 8;
-				  			rightPaddingFixed = rightPaddingFixed + 8;
-						}
-			  		}
-			  		if ( scrollPosition >= elementPosition ) {
-						//if we are at the bottom of the page
-						if ( scrollPosition >= ( absoluteLockPoint - topPadding ) ) {
-				  			$( elementSelector + " div" )
-								.css ({
-								  	"position"        :  "absolute",
-								  	"top"             :  absoluteLockPoint + "px",
-								  	"width"           :  elementWidth,
-								  	"padding-right"   :  rightPaddingFixed + "px"
-								});
-						}
-						else {
-							//If we are in the middle of the page
-								$( elementSelector + " div" )
-								  	.css ({
-										"position"        :  "fixed",
-										"top"             :  topPadding + "px",
-										"width"           :  elementWidth,
-										"padding-top"     :  "",
-										"padding-right"   :  rightPaddingFixed + "px"
-								  	});
-					  	}
-			  		}
-			  		else {
-			  			//if we are at the top of the page
-						resetElement( elementSelector, topPadding, rightPaddingAtTop );
-			  		}
-				}
-				else {
-					//if the view isn't wide enough
-			  		resetElement( elementSelector, topPadding, rightPaddingAtTop );
-				}
-		  	}
-
-		  	//helper function for reading the width and height of screen like CSS Media Queries do.
-		  	function viewport() {
-				var e = window, a = 'inner';
-				if (!('innerWidth' in window )) {
-					a = 'client';
-					e = document.documentElement || document.body;
-				}
-				return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
-		  	}
-
-		  	//made it it's own function because the logic is used 3 times
-		  	function resetElement( elementSelector, topPadding, rightPadding ){
-				removeActiveLinkHighlight();
-				$( elementSelector + " div" )
-			  		.css ({
-					  	"position"        :  "relative",
-					  	"top"             :  "",
-					  	"padding-top"     :  topPadding+"px",
-					  	"width"           :  "",
-					  	"padding-right"   :  rightPadding+"px"
-					});
-		  	}
-		});
-	</script>
+            <script src="assets/js/main.js"></script>
 		</div>
 	</body>
 </html>
