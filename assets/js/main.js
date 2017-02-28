@@ -22,8 +22,9 @@
 	    	} else {
 		    	$icons.each(function (i, icon) {
 		    		var tagName = $(icon).data().iconTag;
+		    		var iconName = $(icon).data().iconName;
 
-	    			if (tagQuery === tagName) {
+	    			if (tagQuery === tagName || tagQuery === iconName) {
 	    				$(icon).addClass('gel-icon-demo--filtered');
 	    				$(icon).removeClass('gel-icon-demo--not-filtered');
 	    			} else {
