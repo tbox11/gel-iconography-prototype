@@ -7,3 +7,32 @@
 .gel-icon-demo--not-filtered {
 	opacity: 0.25;
 }
+
+
+/* Download bar styles. */
+
+.dl-bar {
+	position: fixed;
+	bottom: 0;
+	background-color: #333;
+	color: #FFF;
+	overflow: hidden;
+	width: 100%;
+}
+
+.dl-bar__status {
+	
+}
+
+.dl-bar__nav {
+	list-style: none;
+	padding-left: 0;
+}
+
+.dl-bar__nav li {
+	float: left;
+}
+
+.dl-bar__nav li a {
+	display: block;
+}
