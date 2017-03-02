@@ -5,10 +5,17 @@
 
 	var $searchField = $('#js-search-input');
 	var $icons = $('[data-icon-name]');
+	var $toc = $('#js-gel-guideline-table-of-contents');
 
 	var App = {
 	    init: function() {
 	    	$searchField.on('input', App.filterIcons);
+
+	    	// inView.offset({ top: $toc.outerHeight() });
+	    	// inView.threshold(0);
+	    	inView('#js-search-input')
+	    		.on('exit', App.pinToc)
+	    		.on('enter', App.unpinToc);
 	    },
 
 	    filterIcons: function(e) {
@@ -33,11 +40,18 @@
 	    			}
 		    	});
 	    	}
-	    }
+	    },
+
+	    pinToc: function (elem) {
+	    	$toc.addClass('gel-guideline-table-of-contents--pinned');
+	    },
+
+	    unpinToc: function (elem) {
+	    	$toc.removeClass('gel-guideline-table-of-contents--pinned');
+	    },
 	};
 
 	// Start.
 	$(App.init);
-
 
 })();

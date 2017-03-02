@@ -14,25 +14,84 @@
 .dl-bar {
 	position: fixed;
 	bottom: 0;
-	background-color: #333;
+	background-color: #404040;
 	color: #FFF;
 	overflow: hidden;
+	max-width: 1038px;
 	width: 100%;
+	padding: 16px;
+	height: 50px;
 }
 
 .dl-bar__status {
-	
+    float: left;
 }
 
 .dl-bar__nav {
 	list-style: none;
 	padding-left: 0;
+	float: right;
 }
 
 .dl-bar__nav li {
 	float: left;
+	padding-right: 32px;
 }
 
 .dl-bar__nav li a {
 	display: block;
+}
+
+.dl-bar__nav li label input {
+	height: 25px;
+	float: right;
+	width: 250px;
+	background-color: #9b9b9b;
+	border: none;
+}
+
+.dl-bar__nav li label input::placeholder {
+	color: #404040;
+}
+
+.dl-bar__nav li label input::-webkit-input-placeholder {
+	color:#404040;
+}
+
+.dl-bar__nav li img {
+	height: 16px;
+	float: left;
+	padding-right: 8px;
+}
+
+.dl-bar__nav li p {
+	float: left;
+	color: #9B9B9B;
+}
+
+.dl-bar__nav li label p {
+	padding-right: 16px;
+}
+
+.dl-bar__nav li label {
+	float: left;
+}
+
+.download-button-svg,
+.download-button-png {
+	background-color: #404040;
+	border: none;
+	color: #9B9B9B;
+	height: 16px;
+	padding-right: 16px
+}
+
+/* PINNING. */
+.gel-icon-demo-set--first {
+	border-top: none;
+}
+
+.gel-guideline-table-of-contents--pinned {
+	position: fixed;
+	top: 0;
 }

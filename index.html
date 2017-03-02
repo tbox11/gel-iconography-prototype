@@ -39,7 +39,7 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/base.css" />
     </noscript>
-    
+
     <link rel="stylesheet" href="assets/css/main.css" />
 
     </head>
@@ -89,30 +89,32 @@
                 <div class="gel-wrap">
                     <div class="gel-layout gel-layout--center">
                         <div class="gel-layout__item gel-10/12@xxl">
-                        <div id="users">
-  				<input id="js-search-input" class="search" placeholder="Search Iconography" />
-                        <!-- Contents -->
-                        <div class="gel-guideline-table-of-contents">
-						<div style="position: relative; padding-right: 8px; padding-top: 20px;">
-    					<p class="gel-pica">Contents</p>
-    					<ol>
-                		<li><a href="#core" class="">Core</a></li>
-                		<li><a href="#platforms">Platforms </a></li>
-                		<li><a href="#audio-and-visual">Audio and Visual</a></li>
-                		<li><a href="#content-types">Content Types</a></li>
-                		<li><a href="#controls-and-devices">Controls and Devices</a></li>
-                		<li><a href="#social-personalisation-service">Social, Personalisation &amp; Service</a></li>
-                		<li><a href="#food">Food</a></li>
-                		<li><a href="#sport">Sport</a></li>
-                		<li><a href="#travel">Travel</a></li>
-                		<li><a href="#weather">Weather</a></li>
-                		<li><a href="#children">Children</a></li>
-            			</ol>
-    					</div>
-						</div>
+                        <!-- <div id="users"> -->
+<!-- <div id="js-pinnable" class="pinnable"> -->
+                              <input id="js-search-input" class="search" placeholder="Search Iconography" />
+                            <!-- Contents -->
+                            <div id="js-gel-guideline-table-of-contents" class="gel-guideline-table-of-contents">
+                            <div style="position: relative; padding-right: 8px; padding-top: 20px;">
+                            <p class="gel-pica">Contents</p>
+                            <ol>
+                            <li><a href="#core" class="">Core</a></li>
+                            <li><a href="#platforms">Platforms </a></li>
+                            <li><a href="#audio-and-visual">Audio and Visual</a></li>
+                            <li><a href="#content-types">Content Types</a></li>
+                            <li><a href="#controls-and-devices">Controls and Devices</a></li>
+                            <li><a href="#social-personalisation-service">Social, Personalisation &amp; Service</a></li>
+                            <li><a href="#food">Food</a></li>
+                            <li><a href="#sport">Sport</a></li>
+                            <li><a href="#travel">Travel</a></li>
+                            <li><a href="#weather">Weather</a></li>
+                            <li><a href="#children">Children</a></li>
+                            </ol>
+                            </div>
+                            </div>
+<!-- </div> -->
 
                            <!-- Core icon set -->
-                            <article class="gel-icon-demo-set" id="core" data-label-mode="description">
+                            <article class="gel-icon-demo-set gel-icon-demo-set--first" id="core" data-label-mode="description">
                                 <div class="clearfix">
                                     <h2 class="gel-double-pica-bold gel-icon-demo-set__title">Core</h2>
                                     <button class="gel-brevier-bold gel-icon-demo-set__toggle">Show Icon Names</button>
@@ -3756,20 +3758,33 @@
                                     </div>
                                 </div>
                             </article>
+
             <div class="dl-bar">
                 <p class="dl-bar__status">0 Icons Selected</p>
                 <ul class="dl-bar__nav">
-                    <li><label>Copy this link<input type="text" placeholder="http://bbc.in/2gChgZM" /></label></li>
-                    <li>SVG</li>
-                    <li>PNG</li>
+                    <li>
+                        <label><img src="assets/svg/download-bar/copy-link.svg"><p>Copy this link</p><input type="text" placeholder="http://bbc.in/2gChgZM" /></label>
+                    </li>
+                    <li>
+                        <button class="download-button-svg">
+                          <img src="assets/svg/download-bar/download-svg-grey.svg" onmouseover="this.src='assets/svg/download-bar/download-svg-white.svg'" onmouseout="this.src='assets/svg/download-bar/download-svg-grey.svg'" alt="Download SVG">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="download-button-png">
+                          <img src="assets/svg/download-bar/download-png-grey.svg" onmouseover="this.src='assets/svg/download-bar/download-png-white.svg'" onmouseout="this.src='assets/svg/download-bar/download-png-grey.svg'" alt="Download PNG">
+                        </button>
+                    </li>
                 </ul>
             </div>
+
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </main>
             <script src="assets/js/jquery-1.7.2.js"></script>
             <script src="assets/js/svgxuse.min.js" defer></script>
+            <script src="assets/js/in-view.min.js" defer></script>
             <script>
                 var toggleLabel = function() {
                     var section = this.parentElement.parentElement;
