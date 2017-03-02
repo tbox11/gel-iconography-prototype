@@ -46,6 +46,16 @@
 	height: 25px;
 	float: right;
 	width: 250px;
+	background-color: #9b9b9b;
+  border: none;
+}
+
+.dl-bar__nav li label input::placeholder {
+	color: #404040;
+}
+
+.dl-bar__nav li label input::-webkit-input-placeholder {
+		color:#404040;
 }
 
 .dl-bar__nav li img {
