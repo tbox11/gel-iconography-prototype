@@ -21,6 +21,7 @@
 	width: 100%;
 	padding: 16px;
 	height: 50px;
+	opacity:0;
 }
 
 .dl-bar__status {
@@ -94,4 +95,13 @@
 .gel-guideline-table-of-contents--pinned {
 	position: fixed;
 	top: 0;
+}
+
+/* ICON SELECTED. */
+.selected-icon {
+	background-color: #EBEBEB;
+}
+
+.unselected-icon {
+	background-color: #fff;
 }
